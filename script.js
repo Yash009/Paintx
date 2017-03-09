@@ -30,16 +30,13 @@ function init() {
         findxy('out', e)
     }, false);
     canvas.addEventListener("touchstart", function (e) {
-        findxy('start', e)
+        findtxy('tstart', e)
     }, false);
     canvas.addEventListener("touchmove", function (e) {
-        findxy('tmove', e)
-    }, false);
-    canvas.addEventListener("touchcancel", function (e) {
-        findxy('cancel', e)
+        findtxy('tmove', e)
     }, false);
     canvas.addEventListener("touchend", function (e) {
-        findxy('end', e)
+        findtxy('tend', e)
     }, false);
 }
 
@@ -126,5 +123,34 @@ function findxy(res, e) {
             draw();
         }
     }
+    function findtxy(res, e) {
+        if (res == 'tstart') {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+
+            flag = true;
+            dot_flag = true;
+            if (dot_flag) {
+                ctx.beginPath();
+                ctx.fillStyle = x;
+                ctx.fillRect(currX, currY, 2, 2);
+                ctx.closePath();
+                dot_flag = false;
+            }
+        }
+        if (res == 'tend') {
+            flag = false;
+        }
+        if (res == 'tmove') {
+            if (flag) {
+                prevX = currX;
+                prevY = currY;
+                currX = e.clientX - canvas.offsetLeft;
+                currY = e.clientY - canvas.offsetTop;
+                draw();
+            }
+        }
 }
 
