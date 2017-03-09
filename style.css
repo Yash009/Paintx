@@ -7,24 +7,18 @@ button{
     width: 100px;
     margin: 2px;
 }
-@media screen and (max-width: 1100px) {
-    button{
-        width: 500px;
-        height: 100px;
-    }
 
-}
 #can{
     box-shadow: 20px 20px 10px #888888 !important;
 }
 @media screen and (max-width: 1100px) {
     #can{
-        width: 500px;
-        height: 600px;
+        width: 600px;
+        height: 800px;
         position:absolute!important;
         margin: 20px;
-        top:20% !important;
-        left:30% !important;
+        top:30% !important;
+        left:10% !important;
         border:2px solid !important;
     }
 
@@ -33,7 +27,8 @@ button{
     button{
 
         border-radius: 5px;
-        width: 100px;
+        width: 200px;
+        height: 50px;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -42,8 +37,8 @@ button{
 @media screen and (max-width: 1100px) {
     #clr{
         position:absolute !important;
-        top:50% !important;
-        left:30% !important;
+        top:70% !important;
+        left:20% !important;
     }
 
 }
