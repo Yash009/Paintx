@@ -29,19 +29,9 @@ function init() {
     canvas.addEventListener("mouseout", function (e) {
         findxy('out', e)
     }, false);
-    canvas.addEventListener("touchstart", function (e) {
-        findxy('tstart', e)
-    }, false);
-    canvas.addEventListener("touchmove", function (e) {
-        findxy('tmove', e)
-    }, false);
-    canvas.addEventListener("touchcancel", function (e) {
-        findxy('tcancel', e)
-    }, false);
-    canvas.addEventListener("touchend", function (e) {
-        findxy('tend', e)
-    }, false);
 }
+
+
 
 function color(obj) {
     switch (obj.id) {
