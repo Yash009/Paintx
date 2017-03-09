@@ -1,0 +1,41 @@
+body{
+    background-color: #b3b3b3;
+}
+
+button{
+    border-radius: 5px;
+    width: 100px;
+    margin: 2px;
+}
+#can{
+    box-shadow: 20px 20px 10px #888888 !important;
+}
+@media screen and (max-width: 1100px) {
+    #can{
+        width: 300px;
+        height: 400px;
+        position:absolute!important;
+        top:30% !important;
+        left:10% !important;
+        border:2px solid !important;
+    }
+
+}
+@media screen and (max-width: 1100px) {
+    button{
+
+        border-radius: 5px;
+        width: 100px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+@media screen and (max-width: 1100px) {
+    #clr{
+        position:absolute !important;
+        top:80% !important;
+        left:5% !important;
+    }
+
+}

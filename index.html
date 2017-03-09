@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<body onload="init()">
+<canvas id="can" width="600" height="500" style="position:absolute;background-color:white;top:10%;left:10%;border:2px solid;border-radius: 10px;"></canvas>
+<div><i>Choose Color</i></div>
+<button type="button" id="green" onclick="color(this)">Green</button><br>
+<button type="button" id="blue" onclick="color(this)">Blue</button><br>
+<button type="button" id="red" onclick="color(this)">Red</button><br>
+<button type="button" id="yellow" onclick="color(this)">Yellow</button><br>
+<button type="button" id="orange" onclick="color(this)">Orange</button><br>
+<button type="button" id="black" onclick="color(this)">Black</button><br>
+<button type="button" id="white" onclick="color(this)">Eraser</button>
+<img id="canvasimg" style="position:absolute;top:10%;left:52%;" style="display:none;">
+<button type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:80%;left:20%;">Clear</button>
+</body>
+
+</body>
+</html>
