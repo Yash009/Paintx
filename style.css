@@ -22,7 +22,8 @@ button{
         width: 500px;
         height: 600px;
         position:absolute!important;
-        top:30% !important;
+        margin: 20px;
+        top:60% !important;
         left:10% !important;
         border:2px solid !important;
     }
