@@ -23,8 +23,8 @@ button{
         height: 600px;
         position:absolute!important;
         margin: 20px;
-        top:60% !important;
-        left:10% !important;
+        top:20% !important;
+        left:30% !important;
         border:2px solid !important;
     }
 
@@ -34,16 +34,16 @@ button{
 
         border-radius: 5px;
         width: 100px;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 }
 @media screen and (max-width: 1100px) {
     #clr{
         position:absolute !important;
-        top:80% !important;
-        left:5% !important;
+        top:60% !important;
+        left:30% !important;
     }
 
 }

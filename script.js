@@ -29,6 +29,18 @@ function init() {
     canvas.addEventListener("mouseout", function (e) {
         findxy('out', e)
     }, false);
+    canvas.addEventListener("touchstart", function (e) {
+        findxy('start', e)
+    }, false);
+    canvas.addEventListener("touchmove", function (e) {
+        findxy('tmove', e)
+    }, false);
+    canvas.addEventListener("touchcancel", function (e) {
+        findxy('cancel', e)
+    }, false);
+    canvas.addEventListener("touchend", function (e) {
+        findxy('end', e)
+    }, false);
 }
 
 function color(obj) {
