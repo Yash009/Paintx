@@ -1,0 +1,138 @@
+@import "compass";
+
+* {
+	 @include box-sizing(border-box);
+	 @include user-select(none);
+}
+
+#toolbar {
+	width: 100%;
+	//padding: 3px;
+	position: fixed;
+	//top: 0;
+	background-color: #f2f2f2 * 0.1;
+	
+	
+}
+nav{
+	//display: flex;
+	//flex-wrap:row;
+}
+nav>ul{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+nav>ul>li{
+	list-style: none;
+	margin-left: 10px;
+}
+.tool{
+	height: 40px;
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #f2f2f2 * 0.9;
+}
+.radius{
+	margin-top: 2px;
+	height: 40px;
+	background-color: #f2f2f2 * 0.25;
+
+}
+
+#rad, #radval{
+	font-size: 20px;
+	color: white;
+
+	
+}
+.radControl{
+	width: 30px;
+	padding:5px;
+	background-color: #f2f2f2 * 0.9;
+	text-align: center;
+}
+
+#incRad{
+	margin-right: 20px;
+}
+
+#colors{
+	width: 100%;
+	justify-content:space-around;
+	background-color: #f2f2f2*0.2;
+	padding: 5px;
+	//margin-left: -20px;
+	margin-top: -14px;
+	//margin-right: 10px;
+	
+}
+.swatch{
+	flex-basis: 30px;
+	height: 30px;
+	border-radius: 15px;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 2px rgba(0,0,0,0.5);
+	background-color: cyan;
+}
+.swatch.active{
+	border: 2px solid white;
+	box-shadow: inset 0px 0px 2px rgb(0,0,0)
+}
+
+#save, #clear{
+
+	background-color: #f2f2f2 * 0.5;
+	padding: 10px;
+	text-align: center;
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+
+#save:hover, #clear:hover{
+	background-color: #f2f2f2 * 0.9;
+}
+
+#button	{
+	display: flex;
+}
+
+
+@media screen and (min-width: 768px){
+nav{
+	display: flex;
+}
+
+.tool{
+	height: 54px;
+	margin: auto;
+	
+}
+.radius{
+	margin:auto;
+	height: 54px;
+}
+#colors{
+	margin: auto;
+	height: 54px;
+	margin-left: 20px;
+	margin-right: -20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
