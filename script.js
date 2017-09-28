@@ -19,7 +19,7 @@ function init() {
 
     canvas.addEventListener("mousemove", function (e) {
         findxy('move', e)
-    }, false);
+    }, false);                                                  //event captured in bubbling phase
     canvas.addEventListener("mousedown", function (e) {
         findxy('down', e)
     }, false);
@@ -63,12 +63,12 @@ function color(obj) {
 }
 
 function draw() {
-    ctx.beginPath();
-    ctx.moveTo(prevX, prevY);
-    ctx.lineTo(currX, currY);
-    ctx.strokeStyle = x;
-    ctx.lineWidth = y;
-    ctx.stroke();
+    ctx.beginPath();    //start drawing
+    ctx.moveTo(prevX, prevY); // start position
+    ctx.lineTo(currX, currY); // draw line till here
+    ctx.strokeStyle = x;   //color
+    ctx.lineWidth = y;     //the width
+    ctx.stroke();           //draws the path
     ctx.closePath();
 }
 
@@ -91,8 +91,8 @@ function findxy(res, e) {
     if (res == 'down') {
         prevX = currX;
         prevY = currY;
-        currX = e.clientX - canvas.offsetLeft;
-        currY = e.clientY - canvas.offsetTop;
+        currX = e.clientX - canvas.offsetLeft; // get horizontal co-ordinate
+        currY = e.clientY - canvas.offsetTop;// get vertical co-ordinate
 
         flag = true;
         dot_flag = true;
